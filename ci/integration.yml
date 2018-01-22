@@ -1,0 +1,16 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: teddyking/go-ci
+    tag: 1.9.2
+
+inputs:
+- name: gdndebug
+  path: src/github.com/teddyking/gdndebug
+
+
+run:
+  path: src/github.com/teddyking/gdndebug/ci/scripts/integration

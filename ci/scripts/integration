@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+set -e
+
+export GOPATH=$GOPATH:$PWD
+export PATH=$PATH:/go/bin
+
+cd src/github.com/teddyking/gdndebug
+ginkgo integration
